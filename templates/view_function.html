@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1 class="mb-4">{{ function.name }}</h1>
+    
+    <h3>Definition</h3>
+    <div class="code-block">
+        <pre><code class="python">{{ function.definition }}</code></pre>
+    </div>
+
+    <h3>Example</h3>
+    <div class="code-block">
+        <pre><code class="python">{{ function.example }}</code></pre>
+    </div>
+
+    {% if function.external_link %}
+        <h3>External Resource</h3>
+        <a href="{{ function.external_link }}" target="_blank" class="btn btn-info">View Documentation</a>
+    {% endif %}
+
+    <a href="{{ url_for('home') }}" class="btn btn-secondary mt-3">Back to Home</a>
+{% endblock %}
+

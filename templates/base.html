@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Library</title>
+    <!-- Bootstrap 4 CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Highlight.js CDN for code highlighting -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/styles/default.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles */
+        body {
+            padding-top: 50px;
+        }
+        .navbar {
+            margin-bottom: 20px;
+        }
+        .code-block {
+            background-color: #f7f7f7;
+            border-radius: 5px;
+            padding: 20px;
+            overflow-x: auto;
+        }
+        .function-card {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="/">Python Function Library</a>
+            <form class="form-inline ml-auto" action="/" method="GET">
+                <input class="form-control mr-sm-2" type="search" name="search" placeholder="Search functions" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+
+    <!-- Highlight.js and Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>
+

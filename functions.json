@@ -1,0 +1,83 @@
+[
+    {
+        "id": 1,
+        "name": "input",
+        "definition": "The input() function allows you to take user input as a string.",
+        "example": "user_input = input('Enter something: ')",
+        "visible": true,
+        "type": "native"
+    },
+    {
+        "id": 2,
+        "name": "len",
+        "definition": "The len() function returns the length of an object, like a list or a string.",
+        "example": "length = len([1, 2, 3])",
+        "visible": true,
+        "type": "native"
+    },
+    {
+        "id": 3,
+        "name": "range",
+        "definition": "The range() function generates a sequence of numbers.",
+        "example": "for i in range(5):\n    print(i)\n    #Output: 0 1 2 3 4 5",
+        "visible": true,
+        "type": "native"
+    },
+    {
+        "id": 4,
+        "name": "split",
+        "definition": "The split() method splits a string into a list, based on a separator.",
+        "example": "text = 'Hello world'.split()\n# Output: ['Hello', 'world']",
+        "visible": true,
+        "type": "native"
+    },
+    {
+        "id": 5,
+        "name": "random",
+        "definition": "The random module allows for generating random numbers.",
+        "example": "import random\nrandom_number = random.randint(1, 10)",
+        "visible": true,
+        "type": "native"
+    },
+    {
+        "id": 6,
+        "name": "for_item_in_list",
+        "definition": "Looping through a list using a for loop.",
+        "example": "for item in ['apple', 'banana', 'cherry']:\n    print(item)",
+        "visible": true,
+        "type": "syntax"
+    },
+    {
+        "id": 7,
+        "name": "for_index_in_range",
+        "definition": "Looping through a range of numbers using the range() function.",
+        "example": "items = ['apple', 'banana', 'mango']\nfor i in range(3):\n    print(items[i])\n#Output: apple banana mango",
+        "visible": true,
+        "type": "syntax"
+    },
+    {
+        "id": 8,
+        "name": "if_else",
+        "definition": "Basic if/else conditional statement.",
+        "example": "if x > 10:\n    print('x is greater than 10')\nelse:\n    print('x is less than or equal to 10')",
+        "visible": true,
+        "type": "syntax"
+    },
+    {
+        "id": 9,
+        "name": "mod_function",
+        "definition": "A function that takes a number and returns its modulo with a divisor.",
+        "example": "if 100 % 4 == 0:\n    print('It is divisible by 4')",
+        "visible": true,
+        "type": "syntax"
+    },
+    {
+        "id": 10,
+        "name": "function_with_return",
+        "definition": "Function that returns a value, with one argument.",
+        "example": "def multiply_by_two(x):\n    return x * 2\nresult = multiply_by_two(5)",
+        "visible": true,
+        "type": "syntax"
+    }
+]
+
